@@ -7,9 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import static org.assertj.core.api.Assertions.assertThat;
+
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNotEquals;
 import tn.esprit.spring.controller.RestControlEmploye;
 import tn.esprit.spring.entities.Employe;
 import tn.esprit.spring.entities.Role;
@@ -27,7 +27,7 @@ public class EmployeTest {
     public void testAjouterEmploye(){
 
 		 Employe employe= controllerEmploye.ajouterEmploye (new Employe("Chedy","Rhaiem","chedy.rhaiem@esprit.tn",true,Role.ADMINISTRATEUR ));
-		 assertThat(employe.getId()).isGreaterThan(0);
+		 assertNotEquals(employe.getId(),0);
 		 controllerEmploye.deleteEmployeById(employe.getId());
     }
 	/*@Test 
@@ -51,7 +51,7 @@ public class EmployeTest {
 		Date  dateDebut = new Date( "08/07/2021" );
 		
 		Contrat contrat = controllerEmploye.ajouterContrat(new Contrat(dateDebut,"CDI",1202));
-		
+		assertNotEquals(contrat.getReference(),0);
 		controllerEmploye.deleteContratById(contrat.getReference());
 	}
 	@Test
@@ -68,7 +68,7 @@ public class EmployeTest {
 	@Test
 	public void testGetEmployePrenomById() {
 		Employe employe= controllerEmploye.ajouterEmploye (new Employe("Mejd","Rhaiem","mejd.rhaiemeu@gmail.tn",true,Role.ADMINISTRATEUR ));
-		assertThat(controllerEmploye.getEmployePrenomById(employe.getId())).isEqualTo("Rhaiem");
+		assertEquals("Rhaiem",controllerEmploye.getEmployePrenomById(employe.getId()));
 		controllerEmploye.deleteEmployeById(employe.getId());
 	}
 	
@@ -96,7 +96,7 @@ public class EmployeTest {
 	@Test
 	public void testDeleteEmployeById() {
 		Employe employe= controllerEmploye.ajouterEmploye (new Employe("Chedi","Rh","chedy.rhaiemeu@esprit.tn",true,Role.ADMINISTRATEUR ));
-		assertThat(employe.getId()).isGreaterThan(0);
+		assertNotEquals(employe.getId(),0);
 		controllerEmploye.deleteEmployeById(employe.getId());
 		
 	}
@@ -104,7 +104,7 @@ public class EmployeTest {
 	public void testDeleteContratById() {
 		Date  dateDebut = new Date( "08/07/2021" );
 		Contrat contrat = controllerEmploye.ajouterContrat(new Contrat(dateDebut,"CDF",2200));
-		assertThat(contrat.getReference()).isGreaterThan(0);
+		assertNotEquals(contrat.getReference(),0);
 		controllerEmploye.deleteContratById(contrat.getReference());
 		
 		
