@@ -8,7 +8,7 @@ import org.apache.log4j.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
+
 
 import tn.esprit.spring.entities.Departement;
 import tn.esprit.spring.entities.Employe;
@@ -42,21 +42,23 @@ public class TimesheetServiceImpl implements ITimesheetService {
 		logger.debug("lancement de l'ajout  d'une mission!!! ");
 		missionRepository.save(mission);
 		logger.info("l'ajout est terminé avec succés!!! ");
-	}
-		catch (Exception e){
+
+	}catch (Exception e){
 		logger.error("Erreur dans la methode ajouterMission():"+ e);
-	}
-		finally {
+	}finally {
 		logger.info("Methode ajouterMission() est terminée");
 	}
+
 		
 		return mission.getId();
 	}
     
 	public void affecterMissionADepartement(int missionId, int depId) {
-		
 		try {
 			logger.debug("lancement de l'affectation d'une mission");
+			
+		
+			
 		Mission mission = missionRepository.findById(missionId).get();
 		Departement dep = deptRepoistory.findById(depId).get();
 		mission.setDepartement(dep);
@@ -67,7 +69,6 @@ public class TimesheetServiceImpl implements ITimesheetService {
 		}finally {
 			logger.info("Méthode ajouterMission() términé !!!!");
 		}
-		
 		
 	}
 
@@ -81,7 +82,6 @@ public class TimesheetServiceImpl implements ITimesheetService {
 		Timesheet timesheet = new Timesheet();
 		timesheet.setTimesheetPK(timesheetPK);
 		timesheet.setValide(false); //par defaut non valide
-
 		try {
 			logger.debug("lancement de l'ajout de Timesheet");
 		timesheetRepository.save(timesheet);
@@ -97,7 +97,6 @@ public class TimesheetServiceImpl implements ITimesheetService {
 	
 	public void validerTimesheet(int missionId, int employeId, Date dateDebut, Date dateFin, int validateurId) {
 		logger.info("In valider Timesheet");
-
 		Employe validateur = employeRepository.findById(validateurId).get();
 		Mission mission = missionRepository.findById(missionId).get();
 		//verifier s'il est un chef de departement (interet des enum)
@@ -114,6 +113,7 @@ public class TimesheetServiceImpl implements ITimesheetService {
 			}
 		}
 		if(!chefDeLaMission){
+
 			logger.info("l'employe doit etre chef de departement de la mission en question");
 			return;
 		}
@@ -153,6 +153,5 @@ public class TimesheetServiceImpl implements ITimesheetService {
 		}
 		return employes;
 	}
-	
+	}
 
-}
