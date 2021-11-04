@@ -76,7 +76,7 @@ public class Contrat implements Serializable {
 	public Employe getEmploye() {
 		return employe;
 	}
-
+	
 	public void setEmploye(Employe employe) {
 		this.employe = employe;
 	}
