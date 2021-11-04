@@ -97,14 +97,14 @@ Departement testDep = entrepriseControl.ajouterDepartement(depRH);
 		Assert.assertEquals(e.getId(),89);	
 	}
 	
-	
+	/*
 	@Test
 
 	public void testDeleteEntrepriseById(){
 		entrepriseControl.deleteEntrepriseById(89);
 		Assert.assertNull(entrepriseControl.getEntrepriseById(89));
 	}
-
+*/
 
 
 }
