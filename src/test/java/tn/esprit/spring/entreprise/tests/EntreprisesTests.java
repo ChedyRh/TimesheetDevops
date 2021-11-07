@@ -104,12 +104,8 @@ Departement testDep = entrepriseControl.ajouterDepartement(depRH);
 		entrepriseControl.deleteEntrepriseById(89);
 		Assert.assertNull(entrepriseControl.getEntrepriseById(89));
 	}
-<<<<<<< HEAD
-
-*/
-=======
 */
 
->>>>>>> ccf1ddf702002467f8954d09ab0204002b2d44a0
+
 
 }
