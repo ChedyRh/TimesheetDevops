@@ -1,0 +1,36 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT log4j:configuration (appender+,root)>
+<!ATTLIST log4j:configuration
+  xmlns:log4j CDATA #FIXED 'http://jakarta.apache.org/log4j/'>
+
+<!ELEMENT appender (param*,layout)>
+<!ATTLIST appender
+  xmlns CDATA #FIXED ''
+  class CDATA #REQUIRED
+  name NMTOKEN #REQUIRED>
+
+<!ELEMENT root (level,appender-ref)>
+<!ATTLIST root
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT layout (param)>
+<!ATTLIST layout
+  xmlns CDATA #FIXED ''
+  class NMTOKEN #REQUIRED>
+
+<!ELEMENT level EMPTY>
+<!ATTLIST level
+  xmlns CDATA #FIXED ''
+  value NMTOKEN #REQUIRED>
+
+<!ELEMENT appender-ref EMPTY>
+<!ATTLIST appender-ref
+  xmlns CDATA #FIXED ''
+  ref NMTOKEN #REQUIRED>
+
+<!ELEMENT param EMPTY>
+<!ATTLIST param
+  xmlns CDATA #FIXED ''
+  name NMTOKEN #REQUIRED
+  value CDATA #REQUIRED>
