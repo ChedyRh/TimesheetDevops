@@ -1,68 +1,313 @@
-2021-11-10 18:29:08.832  INFO 13376 --- [main] SpringBootCoreDataJpaMvcRest1Application : Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on DESKTOP-QM3BLPD with PID 13376 (C:\Users\saghir\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\TimesheetDevops\target\classes started by saghir in C:\Users\saghir\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\TimesheetDevops)
-2021-11-10 18:29:08.839  INFO 13376 --- [main] SpringBootCoreDataJpaMvcRest1Application : No active profile set, falling back to default profiles: default
-2021-11-10 18:29:15.850  INFO 13376 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2021-11-10 18:29:16.267  INFO 13376 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 298ms. Found 6 repository interfaces.
-2021-11-10 18:29:17.551  INFO 13376 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f352ed30] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-11-10 18:29:18.915  INFO 13376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
-2021-11-10 18:29:19.323  INFO 13376 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-11-10 18:29:19.324  INFO 13376 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2021-11-10 18:29:19.915  INFO 13376 --- [main] o.a.c.c.C.[.[localhost].[/SpringMVC]     : Initializing Spring embedded WebApplicationContext
-2021-11-10 18:29:19.915  INFO 13376 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 10556 ms
-2021-11-10 18:29:20.795  INFO 13376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-11-10 18:29:21.053  INFO 13376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-11-10 18:29:22.129  INFO 13376 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2021-11-11 10:15:39.883  INFO 18628 --- [main] t.e.s.entreprise.tests.TimesheetTest     : Starting TimesheetTest on DESKTOP-QM3BLPD with PID 18628 (started by saghir in C:\Users\saghir\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\TimesheetDevops)
+2021-11-11 10:15:39.889  INFO 18628 --- [main] t.e.s.entreprise.tests.TimesheetTest     : No active profile set, falling back to default profiles: default
+2021-11-11 10:15:43.964  INFO 18628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 10:15:44.259  INFO 18628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 238ms. Found 7 repository interfaces.
+2021-11-11 10:15:45.447  INFO 18628 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3456d4e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:15:45.670  INFO 18628 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-11-11 10:15:45.701  INFO 18628 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8fbf0fe4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:15:46.854  INFO 18628 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-11 10:15:47.547  INFO 18628 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-11 10:15:48.760  INFO 18628 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2021-11-10 18:29:24.029  INFO 13376 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
-2021-11-10 18:29:24.094  INFO 13376 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2021-11-10 18:29:26.984  INFO 13376 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2021-11-10 18:29:28.219  INFO 13376 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2021-11-10 18:29:35.099  INFO 13376 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-11-10 18:29:36.468  INFO 13376 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2021-11-10 18:29:38.580  INFO 13376 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-11-10 18:29:38.725  WARN 13376 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-11-10 18:29:39.871  INFO 13376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path '/SpringMVC'
-2021-11-10 18:29:39.875  INFO 13376 --- [main] SpringBootCoreDataJpaMvcRest1Application : Started TimesheetSpringBootCoreDataJpaMvcRest1Application in 34.111 seconds (JVM running for 39.155)
-2021-11-10 18:41:54.831  INFO 13376 --- [http-nio-8086-exec-4] o.a.c.c.C.[.[localhost].[/SpringMVC]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-11-10 18:41:54.831  INFO 13376 --- [http-nio-8086-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-11-10 18:41:54.874  INFO 13376 --- [http-nio-8086-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 43 ms
-2021-11-10 19:11:09.823  INFO 13376 --- [RMI TCP Connection(58)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2021-11-10 19:11:09.828  INFO 13376 --- [RMI TCP Connection(58)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-11-10 19:11:09.831  INFO 13376 --- [RMI TCP Connection(58)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-11-10 19:11:09.841  INFO 13376 --- [RMI TCP Connection(58)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-11-10 19:11:09.846  INFO 13376 --- [RMI TCP Connection(58)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-11-10 19:36:08.653  INFO 18912 --- [restartedMain] SpringBootCoreDataJpaMvcRest1Application : Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on DESKTOP-QM3BLPD with PID 18912 (C:\Users\saghir\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\TimesheetDevops\target\classes started by saghir in C:\Users\saghir\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\TimesheetDevops)
-2021-11-10 19:36:08.656  INFO 18912 --- [restartedMain] SpringBootCoreDataJpaMvcRest1Application : No active profile set, falling back to default profiles: default
-2021-11-10 19:36:08.725  INFO 18912 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-11-10 19:36:08.726  INFO 18912 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-11-10 19:36:09.630  INFO 18912 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2021-11-10 19:36:09.738  INFO 18912 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96ms. Found 7 repository interfaces.
-2021-11-10 19:36:10.195  INFO 18912 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3019a913] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-11-10 19:36:10.224  WARN 18912 --- [restartedMain] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
-2021-11-10 19:36:10.225  WARN 18912 --- [restartedMain] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalSchema property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
-2021-11-10 19:36:10.250  INFO 18912 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2021-11-10 19:36:10.276  INFO 18912 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8b81e414] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-11-10 19:36:11.367  INFO 18912 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
-2021-11-10 19:36:11.396  INFO 18912 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-11-10 19:36:11.397  INFO 18912 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2021-11-10 19:36:11.577  INFO 18912 --- [restartedMain] o.a.c.c.C.[.[localhost].[/SpringMVC]     : Initializing Spring embedded WebApplicationContext
-2021-11-10 19:36:11.578  INFO 18912 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2852 ms
-2021-11-10 19:36:11.855  INFO 18912 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-11-10 19:36:12.026  INFO 18912 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-11-10 19:36:12.105  INFO 18912 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2021-11-11 10:15:50.000  INFO 18628 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-11 10:15:50.002  INFO 18628 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-11 10:15:50.540  INFO 18628 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-11 10:15:51.107  INFO 18628 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-11 10:15:55.425  INFO 18628 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:15:56.150  INFO 18628 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-11 10:15:58.668  INFO 18628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:15:59.091  WARN 18628 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-11 10:16:00.545  INFO 18628 --- [main] t.e.s.entreprise.tests.TimesheetTest     : Started TimesheetTest in 22.642 seconds (JVM running for 27.107)
+2021-11-11 10:16:01.863  INFO 18628 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:16:01.866  INFO 18628 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:16:01.870  INFO 18628 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-11 10:16:01.876  INFO 18628 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-11 10:18:00.545  INFO 19748 --- [main] t.e.s.entreprise.tests.TimesheetTest     : Starting TimesheetTest on DESKTOP-QM3BLPD with PID 19748 (started by saghir in C:\Users\saghir\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\TimesheetDevops)
+2021-11-11 10:18:00.547  INFO 19748 --- [main] t.e.s.entreprise.tests.TimesheetTest     : No active profile set, falling back to default profiles: default
+2021-11-11 10:18:02.648  INFO 19748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 10:18:02.934  INFO 19748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 265ms. Found 7 repository interfaces.
+2021-11-11 10:18:03.835  INFO 19748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$a5899f6d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:18:03.899  WARN 19748 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:18:03.900  WARN 19748 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalSchema property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:18:03.959  INFO 19748 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-11-11 10:18:04.020  INFO 19748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f1da6e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:18:04.519  INFO 19748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-11 10:18:04.877  INFO 19748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-11 10:18:05.007  INFO 19748 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2021-11-10 19:36:12.240  INFO 18912 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
-2021-11-10 19:36:12.242  INFO 18912 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2021-11-10 19:36:12.441  INFO 18912 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2021-11-10 19:36:12.665  INFO 18912 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2021-11-10 19:36:15.823  INFO 18912 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-11-10 19:36:15.891  INFO 18912 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-11-10 19:36:16.349  INFO 18912 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2021-11-10 19:36:16.899  INFO 18912 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-11-10 19:36:16.945  WARN 18912 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-11-10 19:36:17.699  INFO 18912 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path '/SpringMVC'
-2021-11-10 19:36:17.702  INFO 18912 --- [restartedMain] SpringBootCoreDataJpaMvcRest1Application : Started TimesheetSpringBootCoreDataJpaMvcRest1Application in 9.412 seconds (JVM running for 11.078)
-2021-11-10 19:37:37.441  INFO 18912 --- [http-nio-8086-exec-1] o.a.c.c.C.[.[localhost].[/SpringMVC]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-11-10 19:37:37.442  INFO 18912 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-11-10 19:37:37.452  INFO 18912 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2021-11-11 10:18:05.123  INFO 19748 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-11 10:18:05.127  INFO 19748 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-11 10:18:05.415  INFO 19748 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-11 10:18:05.891  INFO 19748 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-11 10:18:08.108  INFO 19748 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:18:08.831  INFO 19748 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-11 10:18:10.872  INFO 19748 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:18:11.005  WARN 19748 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-11 10:18:11.949  INFO 19748 --- [main] t.e.s.entreprise.tests.TimesheetTest     : Started TimesheetTest in 12.178 seconds (JVM running for 14.098)
+2021-11-11 10:18:12.572  INFO 19748 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:18:12.592  INFO 19748 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:18:12.596  INFO 19748 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-11 10:18:12.604  INFO 19748 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-11 10:18:52.718  INFO 19900 --- [main] t.e.s.entreprise.tests.TimesheetTest     : Starting TimesheetTest on DESKTOP-QM3BLPD with PID 19900 (started by saghir in C:\Users\saghir\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\TimesheetDevops)
+2021-11-11 10:18:52.721  INFO 19900 --- [main] t.e.s.entreprise.tests.TimesheetTest     : No active profile set, falling back to default profiles: default
+2021-11-11 10:18:54.383  INFO 19900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 10:18:54.788  INFO 19900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 391ms. Found 7 repository interfaces.
+2021-11-11 10:18:55.596  INFO 19900 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8806cf0a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:18:55.653  WARN 19900 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:18:55.655  WARN 19900 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalSchema property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:18:55.704  INFO 19900 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-11-11 10:18:55.742  INFO 19900 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e36f0a0b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:18:56.324  INFO 19900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-11 10:18:56.635  INFO 19900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-11 10:18:56.816  INFO 19900 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-11 10:18:56.910  INFO 19900 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-11 10:18:56.913  INFO 19900 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-11 10:18:57.200  INFO 19900 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-11 10:18:57.660  INFO 19900 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-11 10:19:00.090  INFO 19900 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:19:00.776  INFO 19900 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-11 10:19:02.857  INFO 19900 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:19:02.978  WARN 19900 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-11 10:19:04.144  INFO 19900 --- [main] t.e.s.entreprise.tests.TimesheetTest     : Started TimesheetTest in 12.195 seconds (JVM running for 13.799)
+2021-11-11 10:19:04.821  INFO 19900 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:19:04.825  INFO 19900 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:19:04.829  INFO 19900 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-11 10:19:04.847  INFO 19900 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-11 10:40:48.979  INFO 18964 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : Starting AppointmentSaghirTests on DESKTOP-QM3BLPD with PID 18964 (started by saghir in C:\Users\saghir\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\TimesheetDevops)
+2021-11-11 10:40:49.008  INFO 18964 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : No active profile set, falling back to default profiles: default
+2021-11-11 10:40:57.584  INFO 18964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 10:40:58.056  INFO 18964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 359ms. Found 7 repository interfaces.
+2021-11-11 10:40:59.834  INFO 18964 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$b620eec5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:41:00.037  WARN 18964 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:41:00.040  WARN 18964 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalSchema property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:41:00.111  INFO 18964 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-11-11 10:41:00.143  INFO 18964 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$118929c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:41:01.386  INFO 18964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-11 10:41:02.096  INFO 18964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-11 10:41:02.948  INFO 18964 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-11 10:41:03.995  INFO 18964 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-11 10:41:04.025  INFO 18964 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-11 10:41:06.676  INFO 18964 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-11 10:41:08.339  INFO 18964 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-11 10:41:18.379  INFO 18964 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:41:20.117  INFO 18964 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-11 10:41:23.984  INFO 18964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:41:24.371  WARN 18964 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-11 10:41:25.855  INFO 18964 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : Started AppointmentSaghirTests in 43.113 seconds (JVM running for 57.106)
+2021-11-11 10:41:27.789  INFO 18964 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:41:27.793  INFO 18964 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:41:27.797  INFO 18964 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-11 10:41:27.823  INFO 18964 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-11 10:42:03.388  INFO 13340 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : Starting AppointmentSaghirTests on DESKTOP-QM3BLPD with PID 13340 (started by saghir in C:\Users\saghir\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\TimesheetDevops)
+2021-11-11 10:42:03.393  INFO 13340 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : No active profile set, falling back to default profiles: default
+2021-11-11 10:42:05.237  INFO 13340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 10:42:05.392  INFO 13340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144ms. Found 7 repository interfaces.
+2021-11-11 10:42:06.332  INFO 13340 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8c374455] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:42:06.407  WARN 13340 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:42:06.409  WARN 13340 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalSchema property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:42:06.470  INFO 13340 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-11-11 10:42:06.543  INFO 13340 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e79f7f56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:42:06.994  INFO 13340 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-11 10:42:07.272  INFO 13340 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-11 10:42:07.448  INFO 13340 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-11 10:42:07.539  INFO 13340 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-11 10:42:07.543  INFO 13340 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-11 10:42:07.821  INFO 13340 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-11 10:42:08.222  INFO 13340 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-11 10:42:10.532  INFO 13340 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:42:11.244  INFO 13340 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-11 10:42:13.414  INFO 13340 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:42:13.575  WARN 13340 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-11 10:42:14.679  INFO 13340 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : Started AppointmentSaghirTests in 12.0 seconds (JVM running for 13.363)
+2021-11-11 10:42:15.331  INFO 13340 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:42:15.358  INFO 13340 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:42:15.363  INFO 13340 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-11 10:42:15.375  INFO 13340 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-11 10:42:49.954  INFO 13832 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : Starting AppointmentSaghirTests on DESKTOP-QM3BLPD with PID 13832 (started by saghir in C:\Users\saghir\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\TimesheetDevops)
+2021-11-11 10:42:49.956  INFO 13832 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : No active profile set, falling back to default profiles: default
+2021-11-11 10:42:51.651  INFO 13832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 10:42:51.981  INFO 13832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 314ms. Found 7 repository interfaces.
+2021-11-11 10:42:52.966  INFO 13832 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$229f4201] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:42:53.001  WARN 13832 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:42:53.002  WARN 13832 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalSchema property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:42:53.045  INFO 13832 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-11-11 10:42:53.086  INFO 13832 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7e077d02] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:42:53.557  INFO 13832 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-11 10:42:53.877  INFO 13832 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-11 10:42:54.050  INFO 13832 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-11 10:42:54.183  INFO 13832 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-11 10:42:54.189  INFO 13832 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-11 10:42:54.465  INFO 13832 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-11 10:42:55.031  INFO 13832 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-11 10:42:57.413  INFO 13832 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:42:58.303  INFO 13832 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-11 10:43:00.108  INFO 13832 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:43:00.221  WARN 13832 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-11 10:43:01.216  INFO 13832 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : Started AppointmentSaghirTests in 12.005 seconds (JVM running for 13.329)
+2021-11-11 10:43:01.872  INFO 13832 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:43:01.879  INFO 13832 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:43:01.886  INFO 13832 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-11 10:43:01.913  INFO 13832 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-11 10:46:29.485  INFO 13512 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : Starting AppointmentSaghirTests on DESKTOP-QM3BLPD with PID 13512 (started by saghir in C:\Users\saghir\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\TimesheetDevops)
+2021-11-11 10:46:29.487  INFO 13512 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : No active profile set, falling back to default profiles: default
+2021-11-11 10:46:30.983  INFO 13512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 10:46:31.154  INFO 13512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157ms. Found 7 repository interfaces.
+2021-11-11 10:46:31.840  INFO 13512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$15d59895] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:46:31.881  WARN 13512 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:46:31.883  WARN 13512 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalSchema property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:46:31.925  INFO 13512 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-11-11 10:46:31.958  INFO 13512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$713dd396] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:46:32.365  INFO 13512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-11 10:46:32.567  INFO 13512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-11 10:46:32.679  INFO 13512 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-11 10:46:32.775  INFO 13512 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-11 10:46:32.778  INFO 13512 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-11 10:46:33.008  INFO 13512 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-11 10:46:33.383  INFO 13512 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-11 10:46:35.460  INFO 13512 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:46:36.192  INFO 13512 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-11 10:46:38.403  INFO 13512 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:46:38.531  WARN 13512 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-11 10:46:39.826  INFO 13512 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : Started AppointmentSaghirTests in 10.967 seconds (JVM running for 12.201)
+2021-11-11 10:46:40.838  INFO 13512 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:46:40.843  INFO 13512 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:46:40.847  INFO 13512 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-11 10:46:40.876  INFO 13512 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-11 10:47:03.048  INFO 1044 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : Starting AppointmentSaghirTests on DESKTOP-QM3BLPD with PID 1044 (started by saghir in C:\Users\saghir\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\TimesheetDevops)
+2021-11-11 10:47:03.050  INFO 1044 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : No active profile set, falling back to default profiles: default
+2021-11-11 10:47:04.759  INFO 1044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 10:47:04.931  INFO 1044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157ms. Found 7 repository interfaces.
+2021-11-11 10:47:05.955  INFO 1044 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$229f4201] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:47:06.008  WARN 1044 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:47:06.010  WARN 1044 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalSchema property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:47:06.062  INFO 1044 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-11-11 10:47:06.140  INFO 1044 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7e077d02] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:47:06.548  INFO 1044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-11 10:47:06.780  INFO 1044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-11 10:47:06.904  INFO 1044 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-11 10:47:07.015  INFO 1044 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-11 10:47:07.018  INFO 1044 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-11 10:47:07.245  INFO 1044 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-11 10:47:07.614  INFO 1044 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-11 10:47:09.817  INFO 1044 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:47:10.432  INFO 1044 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-11 10:47:12.175  INFO 1044 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:47:12.272  WARN 1044 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-11 10:47:13.240  INFO 1044 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : Started AppointmentSaghirTests in 10.93 seconds (JVM running for 12.126)
+2021-11-11 10:47:13.827  INFO 1044 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:47:13.830  INFO 1044 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:47:13.836  INFO 1044 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-11 10:47:13.847  INFO 1044 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-11 10:49:05.710  INFO 15740 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : Starting AppointmentSaghirTests on DESKTOP-QM3BLPD with PID 15740 (started by saghir in C:\Users\saghir\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\TimesheetDevops)
+2021-11-11 10:49:05.713  INFO 15740 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : No active profile set, falling back to default profiles: default
+2021-11-11 10:49:07.525  INFO 15740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 10:49:07.708  INFO 15740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 169ms. Found 7 repository interfaces.
+2021-11-11 10:49:08.528  INFO 15740 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2e6c5d87] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:49:08.574  WARN 15740 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:49:08.575  WARN 15740 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalSchema property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:49:08.640  INFO 15740 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-11-11 10:49:08.676  INFO 15740 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$89d49888] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:49:09.068  INFO 15740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-11 10:49:09.298  INFO 15740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-11 10:49:09.437  INFO 15740 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-11 10:49:09.589  INFO 15740 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-11 10:49:09.594  INFO 15740 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-11 10:49:09.919  INFO 15740 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-11 10:49:10.323  INFO 15740 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-11 10:49:12.603  INFO 15740 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:49:13.168  INFO 15740 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-11 10:49:15.077  INFO 15740 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:49:15.192  WARN 15740 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-11 10:49:15.991  INFO 15740 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : Started AppointmentSaghirTests in 10.962 seconds (JVM running for 13.032)
+2021-11-11 10:49:16.500  INFO 15740 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [tn.esprit.spring.entreprise.tests.TimesheetTest], using SpringBootContextLoader
+2021-11-11 10:49:16.501  INFO 15740 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [tn.esprit.spring.entreprise.tests.TimesheetTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-11-11 10:49:16.502  INFO 15740 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [tn.esprit.spring.entreprise.tests.TimesheetTest]: TimesheetTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-11-11 10:49:16.511  INFO 15740 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application for test class tn.esprit.spring.entreprise.tests.TimesheetTest
+2021-11-11 10:49:16.513  INFO 15740 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-11-11 10:49:16.514  INFO 15740 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@22e253c7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2480acc3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4fe3199d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@58ebfbcb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@68a7f77a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4960b819, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1e987f59, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@192aeae2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4ee1c29a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@28d1b2f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5f32de90, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1181526e]
+2021-11-11 10:49:16.835  INFO 15740 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:49:16.838  INFO 15740 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:49:16.841  INFO 15740 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-11 10:49:16.848  INFO 15740 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-11 10:50:53.821  INFO 9012 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : Starting AppointmentSaghirTests on DESKTOP-QM3BLPD with PID 9012 (started by saghir in C:\Users\saghir\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\TimesheetDevops)
+2021-11-11 10:50:53.858  INFO 9012 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : No active profile set, falling back to default profiles: default
+2021-11-11 10:50:56.318  INFO 9012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 10:50:56.624  INFO 9012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 293ms. Found 7 repository interfaces.
+2021-11-11 10:50:57.422  INFO 9012 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$d9bb14fc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:50:57.464  WARN 9012 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:50:57.465  WARN 9012 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalSchema property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:50:57.506  INFO 9012 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-11-11 10:50:57.542  INFO 9012 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$35234ffd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:50:57.989  INFO 9012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-11 10:50:58.291  INFO 9012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-11 10:50:58.405  INFO 9012 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-11 10:50:58.528  INFO 9012 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-11 10:50:58.531  INFO 9012 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-11 10:50:58.828  INFO 9012 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-11 10:50:59.259  INFO 9012 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-11 10:51:01.705  INFO 9012 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:51:02.288  INFO 9012 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-11 10:51:03.695  INFO 9012 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:51:03.771  WARN 9012 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-11 10:51:04.539  INFO 9012 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : Started AppointmentSaghirTests in 11.406 seconds (JVM running for 14.702)
+2021-11-11 10:51:05.030  INFO 9012 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [tn.esprit.spring.entreprise.tests.TimesheetTest], using SpringBootContextLoader
+2021-11-11 10:51:05.031  INFO 9012 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [tn.esprit.spring.entreprise.tests.TimesheetTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-11-11 10:51:05.032  INFO 9012 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [tn.esprit.spring.entreprise.tests.TimesheetTest]: TimesheetTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-11-11 10:51:05.145  INFO 9012 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application for test class tn.esprit.spring.entreprise.tests.TimesheetTest
+2021-11-11 10:51:05.147  INFO 9012 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-11-11 10:51:05.148  INFO 9012 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1d722bff, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@72c29d87, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2835b3d1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@20e9b10b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2c485b3a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4a00d591, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4fae4c3b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2222cd2c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4cddc3d9, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3d2b8e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3dcf6026, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@930911e]
+2021-11-11 10:51:05.336  INFO 9012 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:51:05.338  INFO 9012 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:51:05.341  INFO 9012 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-11 10:51:05.348  INFO 9012 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-11 10:56:01.223  INFO 16032 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : Starting AppointmentSaghirTests on DESKTOP-QM3BLPD with PID 16032 (started by saghir in C:\Users\saghir\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\TimesheetDevops)
+2021-11-11 10:56:01.238  INFO 16032 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : No active profile set, falling back to default profiles: default
+2021-11-11 10:56:03.757  INFO 16032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-11 10:56:04.316  INFO 16032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 545ms. Found 7 repository interfaces.
+2021-11-11 10:56:05.726  INFO 16032 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4d4c0d61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:56:05.822  WARN 16032 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalDTD property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:56:05.824  WARN 16032 --- [main] o.s.xml.DocumentBuilderFactoryUtils      : http://javax.xml.XMLConstants/property/accessExternalSchema property not supported by org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+2021-11-11 10:56:06.082  INFO 16032 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-11-11 10:56:06.140  INFO 16032 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8b44862] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 10:56:06.995  INFO 16032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-11 10:56:08.258  INFO 16032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-11 10:56:08.509  INFO 16032 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-11 10:56:08.643  INFO 16032 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-11 10:56:08.648  INFO 16032 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-11 10:56:09.037  INFO 16032 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-11 10:56:10.114  INFO 16032 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-11 10:56:12.958  INFO 16032 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:56:13.958  INFO 16032 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-11 10:56:16.860  INFO 16032 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:56:17.063  WARN 16032 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-11 10:56:19.027  INFO 16032 --- [main] t.e.s.a.tests.AppointmentSaghirTests     : Started AppointmentSaghirTests in 19.874 seconds (JVM running for 23.664)
+2021-11-11 10:56:20.457  INFO 16032 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [tn.esprit.spring.entreprise.tests.TimesheetTest], using SpringBootContextLoader
+2021-11-11 10:56:20.459  INFO 16032 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [tn.esprit.spring.entreprise.tests.TimesheetTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-11-11 10:56:20.459  INFO 16032 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [tn.esprit.spring.entreprise.tests.TimesheetTest]: TimesheetTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-11-11 10:56:20.471  INFO 16032 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application for test class tn.esprit.spring.entreprise.tests.TimesheetTest
+2021-11-11 10:56:20.473  INFO 16032 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-11-11 10:56:20.474  INFO 16032 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6e0d058a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3eb0fd88, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@adc3344, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@484302ee, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4e647f39, org.springframework.test.context.transaction.TransactionalTestExecutionListener@778197c0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1c2cdc67, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4c28f97e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@21d8da75, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5a1c7619, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@20a946d9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2b41b8bb]
+2021-11-11 10:56:20.854  INFO 16032 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-11 10:56:20.861  INFO 16032 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 10:56:20.886  INFO 16032 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-11 10:56:20.958  INFO 16032 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
