@@ -147,7 +147,7 @@ public class EmployeServiceImpl implements IEmployeService {
 		contratRepoistory.delete(contratManagedEntity);
 
 	}
-
+	//hello
 	public int getNombreEmployeJPQL() {
 		logger.debug("lancement de l'affichage de nombre des employes");
 		return employeRepository.countemp();
